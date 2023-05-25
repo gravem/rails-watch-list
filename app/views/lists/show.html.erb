@@ -1,0 +1,5 @@
+<h1><%= @list.name %></h1>
+<p>Tip from marco to list bookmarks @list.bookmarks.bookmark_id</p>
+<%= link_to 'Add a movie to this list', new_list_bookmark_path(@list) %>
+<%= link_to 'Take me back', lists_path %>
+<%=  %>
