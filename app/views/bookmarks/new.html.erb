@@ -1,7 +1,9 @@
 <h1>Add a movie to a list</h1>
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie %>
-  <%= f.button :submit %>
-<% end %>
-<%= link_to 'Never mind... Take me back', lists_path %>
+<div class="shadow p-3 mb-5 bg-body rounded">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie %>
+    <%= f.button :submit, class: "btn btn-dark" %>
+  <% end %>
+</div>
+<%= link_to 'Never mind... Take me back', lists_path, class: "btn btn-dark" %>
